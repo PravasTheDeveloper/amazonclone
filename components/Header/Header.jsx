@@ -6,6 +6,7 @@ import TopNav from './TopNav'
 import Data from '../../Data'
 import Data2 from '../../Data2'
 import HomePageCata from './HomePageCata'
+import SliderNew from './SliderNew'
 
 
 function Header() {
@@ -31,7 +32,7 @@ function Header() {
             }
 
           </div> */}
-          <div className='grid grid-flow-row-dense grid-cols-4'>
+          <div className='lg:grid ld:mt-32 grid-flow-row-dense grid-cols-4'>
             {
               Data2.map((data) => {
                 return <HomePageCata productTitle={data.name} image={data.imageLink}/>
@@ -41,7 +42,7 @@ function Header() {
           </div>
 
           <div>
-            
+            <SliderNew />
           </div>
 
         </div>
@@ -50,13 +51,5 @@ function Header() {
   )
 }
 
-// export async function getServerSideProps(context) {
-//   const res = await fetch("https://fakestoreapi.com/products")
-//   const products = await res.json()
-
-//   return {
-//     props: { products : products} // will be passed to the page component as props
-//   }
-// }
 
 export default Header;
