@@ -20,7 +20,7 @@ function TopNav() {
                 <div className='md:flex w-full justify-center items-center mb-10 md:my-0'>
                     <div className='w-full flex justify-around items-center'>
                         <div className='flex items-end mx-4'>
-                            <div style={{ "margin-bottom": "2px" }}>
+                            <div style={{ "marginBottom": "2px" }}>
                                 <LocationMarkerIcon style={{ "width": "24px" }} />
                             </div>
                             <div className='cursor-pointer link'>

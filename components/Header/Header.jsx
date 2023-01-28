@@ -34,8 +34,8 @@ function Header() {
           </div> */}
           <div className='lg:grid ld:mt-32 grid-flow-row-dense grid-cols-4'>
             {
-              Data2.map((data) => {
-                return <HomePageCata productTitle={data.name} image={data.imageLink}/>
+              Data2.map((data,ind) => {
+                return <HomePageCata key={ind} productTitle={data.name} image={data.imageLink}/>
               })
             }
 
